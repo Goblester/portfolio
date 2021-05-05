@@ -1,0 +1,10 @@
+
+.header{
+    height: 80px;
+    background-color: black;
+}
+
+div.container{
+    justify-content: flex-start;
+    padding: 0;
+}

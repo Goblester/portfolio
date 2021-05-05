@@ -1,0 +1,35 @@
+
+
+.home{
+    height: 100vh;
+    background-color: #191919;
+}
+
+div.container{
+    justify-content: space-between;
+    padding: 0;
+}
+
+.description{
+    border: 1px solid white;
+    background-color: #9c9eaa;
+}
+
+.description span{
+    font-size: 1.2em;
+}
+
+.description h1{
+    margin: 0;
+    font-size: 2em;
+}
+
+.description h1 span{
+    color: #f9004d;
+}
+
+.photo{
+    width: 300px;
+    height: 400px;
+    background: white;
+}
