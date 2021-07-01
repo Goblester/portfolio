@@ -8,3 +8,10 @@ div.container{
     justify-content: flex-start;
     padding: 0;
 }
+
+@media (max-width: 700px) {
+    div.container{
+        justify-content: center;
+        padding: 0;
+    }
+}
