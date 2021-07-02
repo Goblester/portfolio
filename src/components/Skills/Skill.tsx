@@ -1,4 +1,4 @@
-import styles from './Skills.module.css';
+import styles from './Skills.module.scss';
 
 export function Skill({title, description}: {
     title: string

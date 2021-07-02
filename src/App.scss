@@ -1,0 +1,11 @@
+@import './common/styles/variables';
+
+.App {
+
+}
+.App section:nth-child(2n){
+    background-color: $bodyColor;
+}
+.App section:nth-child(2n+1){
+  background-color: $sndBodyColor;
+}

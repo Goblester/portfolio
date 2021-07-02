@@ -1,13 +1,14 @@
-import styles from './Skills.module.css';
+import styles from './Skills.module.scss';
 import styleContainer from '../../common/styles/styleContainer.module.scss';
 import {Skill} from './Skill';
+import {Title} from '../../common/Title/Title';
 
 export function Skills() {
     return (
         <section className={styles.skills}>
             <div className={styleContainer.container}>
                 <div className={styleContainer.secondContainer}>
-                    <h2>Skills</h2>
+                    <Title title={'Skills'}/>
                     <div className={styleContainer.itemsContainer}>
                         <Skill title={'JS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' +
                         'sed do eiusmod tempor incididunt ut labore et dolore' +

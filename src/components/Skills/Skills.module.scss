@@ -1,11 +1,7 @@
+@import './src/common/styles/variables';
+
 
 .skills {
-    background-color: #101010;
-}
-
-.skills h2{
-    font-size: 2em;
-    border: 1px solid white;
 }
 
 .item {
@@ -28,5 +24,4 @@
     height: 60px;
     width: 60px;
     background-color: white;
-
 }
