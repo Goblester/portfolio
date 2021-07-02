@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navigation } from '../Navigtaion/Navigation';
 import styles from './Header.module.css';
-import styleContainer from '../../common/styles/styleContainer.module.scss';
+import styleContainer from '../common/styles/styleContainer.module.scss';
 
 export function Header(){
     return(

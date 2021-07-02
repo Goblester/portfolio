@@ -1,5 +1,5 @@
 import styles from './Home.module.scss';
-import styleContainer from '../../common/styles/styleContainer.module.scss';
+import styleContainer from '../common/styles/styleContainer.module.scss';
 
 export function Home(){
     return(

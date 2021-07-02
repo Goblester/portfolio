@@ -1,5 +1,5 @@
 import styles from './Contact.module.css';
-import styleContainer from '../../common/styles/styleContainer.module.scss';
+import styleContainer from '../common/styles/styleContainer.module.scss';
 
 export function Contact() {
     return (

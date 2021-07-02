@@ -3,10 +3,6 @@
     background-color: #191919;
 }
 
-.portfolio h2 {
-    font-size: 2em;
-    border: 1px solid white;
-}
 
 .item {
     margin: 10px 10px;
@@ -14,7 +10,7 @@
     height: 499px;
     padding: 60px 30px 30px 30px;
     border-radius: 10px;
-    background: url("./../../assets/photo/portfolio-7.jpg");
+    background: url("../../../assets/photo/portfolio-7.jpg");
     background-size: cover;
     background-position: center;
     display: flex;

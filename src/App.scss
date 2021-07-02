@@ -1,7 +1,11 @@
-@import './common/styles/variables';
+@import 'n1-main/m1-UI/common/styles/variables';
 
 .App {
 
+}
+
+.App section{
+  padding: 120px 0;
 }
 .App section:nth-child(2n){
     background-color: $bodyColor;

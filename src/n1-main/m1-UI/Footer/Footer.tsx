@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import styleContainer from '../../common/styles/styleContainer.module.scss';
+import styleContainer from '../common/styles/styleContainer.module.scss';
 
 export function Footer() {
     return (
