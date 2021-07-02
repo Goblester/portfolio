@@ -1,5 +1,5 @@
 import styles from './Portfolio.module.css';
-import styleContainer from './../../common/styles/styleContainer.module.css';
+import styleContainer from '../../common/styles/styleContainer.module.scss';
 import {Project} from './Project';
 
 export function Portfolio() {
