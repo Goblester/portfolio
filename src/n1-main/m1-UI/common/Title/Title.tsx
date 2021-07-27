@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './Title.module.scss'
 
-type TitleProps = {
+export const Title: React.FC<TitleProps> = ({title, description}:{
     title: string
-}
-
-export const Title: React.FC<TitleProps> = ({title}:TitleProps) => {
+    description: string
+}) => {
     return (
         <h2 className={styles.title}>{title}</h2>
     )

@@ -1,5 +1,5 @@
 import styles from './Skills.module.scss';
-
+import stContainer from './../common/styles/styleContainer.module.scss';
 
 export function Skill({title, description, logo}: {
     title: string
@@ -7,12 +7,18 @@ export function Skill({title, description, logo}: {
     description: string
 }) {
     return (
-        <div className={styles.itemContainer}>
+        <div className={stContainer.flexItem}>
             <div className={styles.item}>
                 <a href={''}>
-                    <img src={logo} className={styles.logo} alt=""/>
-                    <h3>{title}</h3>
-                    <p>{description}</p>
+                    <div className={styles.service}>
+                        <img src={logo} className={styles.logo} alt=""/>
+                        <div className={styles.content}>
+                            <h3>{title}</h3>
+                            <p>{description}</p>
+                        </div>
+
+                    </div>
+
                 </a>
             </div>
         </div>

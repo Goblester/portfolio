@@ -8,22 +8,22 @@ import {SkillType} from '../../m2-BLL/skillsReducer';
 
 
 export function Skills() {
-    const skills = useSelector<AppStoreType, Array<SkillType>>(state=>state.skills);
+    const skills = useSelector<AppStoreType, Array<SkillType>>(state => state.skills);
     return (
         <section className={styles.skills}>
             <div className={styleContainer.container}>
-                <div className={styleContainer.secondContainer}>
-                    <Title title={'My Skills'}/>
-                    <div className={styleContainer.itemsContainer}>
-                        {
-                            skills.map(sk=>{
-                                return <Skill title={sk.title}
-                                              logo={sk.logo}
-                                              description={sk.description}/>
-                            })
-                        }
-                    </div>
+
+                <Title title={'My Skills'}/>
+                <div className={styleContainer.row}>
+                    {
+                        skills.map(sk => {
+                            return <Skill title={sk.title}
+                                          logo={sk.logo}
+                                          description={sk.description}/>
+                        })
+                    }
                 </div>
+
             </div>
         </section>
     )

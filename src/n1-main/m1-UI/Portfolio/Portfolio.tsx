@@ -15,14 +15,13 @@ export function Portfolio() {
             <div className={styleContainer.container}>
                 <div className={styleContainer.secondContainer}>
                     <Title title={'My Latest Projects'}/>
-                    <div className={styles.container}>
-                        <div className={styleContainer.itemsContainer}>
-                            {
-                                projects.map(pr => <Project title={pr.title}
-                                                            description={pr.description}
-                                                            backgroundImage={pr.backgroundImage}/>)
-                            }
-                        </div>
+
+                    <div className={`${styleContainer.itemsContainer} ${styles.container}`}>
+                        {
+                            projects.map(pr => <Project title={pr.title}
+                                                        description={pr.description}
+                                                        backgroundImage={pr.backgroundImage}/>)
+                        }
                     </div>
                 </div>
             </div>

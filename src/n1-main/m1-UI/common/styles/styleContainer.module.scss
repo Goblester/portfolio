@@ -1,6 +1,5 @@
 
 .container {
-  width: 1260px;
   height: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -8,7 +7,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-
+  box-sizing: content-box;
   @media screen and (min-width: 576px) {
     max-width: 540px;
   }
@@ -21,9 +20,49 @@
   @media screen and (min-width: 1200px) {
     max-width: 1260px;
   }
-  @media screen and (max-width: 575px) {
-    width: 100%;
-    justify-content: center;
+}
+
+.row{
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.flexItem{
+  margin-top: 30px;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  @media screen and (min-width: 576px) {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @media screen and (min-width: 768px) {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @media screen and (min-width: 992px) {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+.col12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  @media (min-width: 992px){
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
@@ -40,16 +79,4 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-}
-
-
-@media (max-width: 757px) {
-
-  .itemsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
