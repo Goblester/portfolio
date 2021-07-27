@@ -1,35 +1,40 @@
 import atom from './../../assets/photo/atom.png';
+import redux from './../../assets/photo/redux.png';
+import typescript from './../../assets/photo/typescript.png';
+import design from './../../assets/photo/design.png';
+import testing from './../../assets/photo/testing.png';
+import html from './../../assets/photo/html-coding.png';
 
 const initialState : Array<SkillType> = [
     {
         title: 'React',
         logo: atom,
-        description: 'lorem, ipsum'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         title: 'Redux',
-        logo: '',
-        description: 'lorem, ipsum'
+        logo: redux,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         title: 'TypeScript',
-        logo: '',
-        description: 'lorem, ipsum'
+        logo: typescript,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
-        title: 'Thunk',
-        logo: '',
-        description: 'lorem, ipsum'
+        title: 'Material UI',
+        logo: design,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
-        title: 'Unit testing',
-        logo: '',
-        description: 'lorem, ipsum'
+
+        title: 'Unit testing',logo: testing,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         title: 'HTML&CSS',
-        logo: '',
-        description: 'lorem, ipsum'
+        logo: html,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
 ]
 

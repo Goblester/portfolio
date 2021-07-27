@@ -1,9 +1,11 @@
 import {combineReducers, createStore} from 'redux';
 import {skillsReducer} from './skillsReducer';
+import {projectsReducer} from './Projects';
 
 
 const reducers = combineReducers({
-    skills: skillsReducer
+    skills: skillsReducer,
+    projects: projectsReducer
 })
 
 

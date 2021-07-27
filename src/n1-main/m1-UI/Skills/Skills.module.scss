@@ -2,23 +2,75 @@
 
 
 .skills {
-}
+  .itemContainer {
+    margin-top: 30px;
+    padding: 0 15px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    position: relative;
+    width: 100%;
 
-.item {
-    margin: 10px 10px;
-    width: 300px;
-    padding: 60px 30px 30px 30px;
-    border-radius: 10px;
-    background-color: #191919;
-    @include flexContainer(column, center, center);
-    h3{
-        margin: 0;
-    }
-    .logo {
-        height: 60px;
-        width: 60px;
-        background-color: white;
-    }
+    .item {
+      margin-top: 0;
+      height: 100%;
+      position: relative;
+      border-radius: 10px;
+      @include flexContainer(column, center, center);
 
+      a {
+        display: block;
+        position: relative;
+        background-image: linear-gradient($bodyColor, $bodyColor);
+        padding: 60px 45px;
+        z-index: 1;
+        border-radius: 10px;
+        top: 0;
+        transition: top .4s ease, .4s ease;
+
+        h3 {
+          margin: 0;
+        }
+
+
+        .logo {
+          display: block;
+          height: 40px;
+          width: 40px;
+          position: relative;
+          z-index: 1;
+          top: 0;
+          filter: invert(11%) sepia(100%) saturate(5404%) hue-rotate(335deg) brightness(105%) contrast(111%);
+          transition: top .4s ease, .4s ease;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(to right, #f81f01, #ee076e);
+          opacity: 0;
+          transition: opacity 0.4s;
+          z-index: -1;
+          border-radius: 10px;
+        }
+
+        &:hover::before {
+          opacity: 1;
+        }
+
+        &:hover {
+          top: -5px;
+
+          .logo {
+            filter: invert(13%) sepia(100%) saturate(5404%) hue-rotate(335deg) brightness(100%) contrast(0%) ;
+          }
+        }
+      }
+
+    }
+  }
 }
 
