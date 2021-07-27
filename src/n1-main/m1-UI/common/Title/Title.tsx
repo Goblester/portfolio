@@ -1,11 +1,19 @@
 import React from 'react';
 import styles from './Title.module.scss'
+import stContainer from './../../common/styles/styleContainer.module.scss';
 
-export const Title: React.FC<TitleProps> = ({title, description}:{
+type TitleProps = {
     title: string
     description: string
-}) => {
+}
+
+export const Title: React.FC<TitleProps> = ({title, description}: TitleProps) => {
     return (
-        <h2 className={styles.title}>{title}</h2>
+        <div className={stContainer.row}>
+            <div className={styles.col}>
+                <h2 className={styles.title}>{title}</h2>
+                <p>{description}</p>
+            </div>
+        </div>
     )
 }

@@ -13,7 +13,7 @@ export function Skills() {
         <section className={styles.skills}>
             <div className={styleContainer.container}>
 
-                <Title title={'My Skills'}/>
+                <Title title={'My Skills'}  description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}/>
                 <div className={styleContainer.row}>
                     {
                         skills.map(sk => {

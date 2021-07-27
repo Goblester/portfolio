@@ -14,7 +14,7 @@ export function Portfolio() {
         <section className={styles.portfolio}>
             <div className={styleContainer.container}>
                 <div className={styleContainer.secondContainer}>
-                    <Title title={'My Latest Projects'}/>
+                    <Title title={'My Latest Projects'} description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}/>
 
                     <div className={`${styleContainer.itemsContainer} ${styles.container}`}>
                         {
