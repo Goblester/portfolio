@@ -1,11 +1,13 @@
 import {combineReducers, createStore} from 'redux';
 import {skillsReducer} from './skillsReducer';
-import {projectsReducer} from './Projects';
+import {projectsReducer} from './projectsReducer';
+import {appReducer} from './appReducer';
 
 
 const reducers = combineReducers({
     skills: skillsReducer,
-    projects: projectsReducer
+    projects: projectsReducer,
+    app: appReducer
 })
 
 

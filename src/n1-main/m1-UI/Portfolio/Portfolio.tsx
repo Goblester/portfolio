@@ -4,7 +4,7 @@ import {Project} from './Project';
 import {Title} from '../common/Title/Title';
 import {useSelector} from 'react-redux';
 import {AppStoreType} from '../../m2-BLL/Store';
-import {ProjectType} from '../../m2-BLL/Projects';
+import {ProjectType} from '../../m2-BLL/projectsReducer';
 
 export function Portfolio() {
 
