@@ -1,0 +1,120 @@
+@import "../common/styles/variables";
+
+
+.contact {
+  background-color: #101010;
+  font-family: "Poppins", sans-serif;
+  .row {
+    margin: 0 -25px;
+    .col {
+      padding-left: 25px;
+      padding-right: 25px;
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+      @media (min-width: 992px) {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      .info{
+        margin-top: -20px;
+        margin-bottom: 50px !important;
+        h2{
+          margin: 0 0 8px 0;
+        }
+
+        p {
+          color: #9c9eaa;
+          margin: 0 ;
+          font-size: 18px;
+          line-height: 30px;
+
+          span {
+            color: #f8f8f8;
+          }
+        }
+      }
+
+
+
+      .formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 300px;
+        align-items: flex-start;
+
+        .inputForm {
+          color: rgba(198, 201, 216, .75);
+          border: 2px solid rgba(255, 255, 255, .2);
+          display: block;
+          background: 0 0;
+          width: 100%;
+          padding: 0 20px;
+          border-radius: 5px;
+          height: 50px;
+          line-height: 46px;
+          outline: none;
+          font-size: 15px;
+          letter-spacing: 0.1px;
+          font-family: "Poppins", sans-serif;
+        }
+
+        .textAreaForm {
+          height: 100px;
+        }
+
+        .button {
+          font-family: "Poppins", sans-serif;
+          border: 2px solid $secondaryColor;;
+          background: $secondaryColor;;
+          color: #fff;
+          font-size: 16px;
+          letter-spacing: 2px;
+          padding: 15px 40px;
+          border-radius: 6px;
+          display: inline-block;
+          font-weight: 500;
+          transition: .3s;
+          &:hover{
+            box-shadow: 0 10px 15px 0 rgba(249, 0, 77, .1);
+            color: $secondaryColor;
+            transform: translateY(-5px);
+            background: 0 0;
+          }
+
+        }
+      }
+
+      .photo {
+        img {
+          width: 100%;
+          border-radius: 5px;
+        }
+
+        @media only screen and (max-width: 991px) {
+          margin-bottom: 40px;
+        }
+      }
+
+    }
+  }
+}
+
+.order1 {
+  order: 1;
+  @media (min-width: 992px) {
+    order: 2;
+  }
+}
+
+.order2 {
+
+  order: 2;
+  @media (min-width: 992px) {
+    order: 1;
+  }
+}

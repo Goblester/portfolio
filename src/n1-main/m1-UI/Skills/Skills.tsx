@@ -10,7 +10,7 @@ import {SkillType} from '../../m2-BLL/skillsReducer';
 export function Skills() {
     const skills = useSelector<AppStoreType, Array<SkillType>>(state => state.skills);
     return (
-        <section className={styles.skills}>
+        <section className={styles.skills} id={'skills'}>
             <div className={styleContainer.container}>
 
                 <Title title={'My Skills'}  description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}/>

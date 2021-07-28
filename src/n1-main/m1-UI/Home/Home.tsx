@@ -3,7 +3,7 @@ import styleContainer from '../common/styles/styleContainer.module.scss';
 
 export function Home() {
     return (
-        <section className={styles.home}>
+        <section className={styles.home} id={'home'}>
             <div className={`${styleContainer.container} ${styles.container}`}>
                 <div className={styleContainer.row}>
                     <div className={styleContainer.col12}>

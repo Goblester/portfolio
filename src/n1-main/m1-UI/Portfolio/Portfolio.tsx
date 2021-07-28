@@ -11,7 +11,7 @@ export function Portfolio() {
     const projects = useSelector<AppStoreType, Array<ProjectType>>(state => state.projects);
 
     return (
-        <section className={styles.portfolio}>
+        <section className={styles.portfolio} id={'portfolio'}>
             <div className={styleContainer.container}>
                 <div className={styleContainer.secondContainer}>
                     <Title title={'My Latest Projects'} description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}/>
