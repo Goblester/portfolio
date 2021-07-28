@@ -8,12 +8,11 @@ export const Links = () => {
 
     return(
         <>
-            <a href=""><FontAwesomeIcon icon={faLinkedinIn}/>
-            </a>
-            <a href=""><FontAwesomeIcon icon={faGithubAlt}/></a>
-            <a href=""><FontAwesomeIcon icon={faVk}/></a>
-            <a href=""><FontAwesomeIcon icon={faTelegramPlane}/></a>
-            <a href=""><FontAwesomeIcon icon={faFileCode}/></a>
+            <a href='https://www.linkedin.com/in/daniil-ogloblin/'><FontAwesomeIcon icon={faLinkedinIn}/></a>
+            <a href="https://github.com/Goblester"><FontAwesomeIcon icon={faGithubAlt}/></a>
+            <a href="https://www.codewars.com/users/Goblester"><FontAwesomeIcon icon={faFileCode}/></a>
+            <a href="https://t.me/Daniil_Ogloblin"><FontAwesomeIcon icon={faTelegramPlane}/></a>
+            <a href="https://vk.com/goblester"><FontAwesomeIcon icon={faVk}/></a>
         </>
     )
 }

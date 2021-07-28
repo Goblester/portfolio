@@ -1,35 +1,52 @@
 import socialWebSite from './../../assets/photo/portfolio-7.jpg';
+import social from './../../assets/photo/portfolio-1.jpg';
+import todo from './../../assets/photo/portfolio-2.png';
+import cards from './../../assets/photo/portfolio-3.png';
+import test from './../../assets/photo/portfolio-4.png';
+import counter from './../../assets/photo/portfolio-5.jpg';
 
-const initialState : Array<ProjectType> = [
+const initialState: Array<ProjectType> = [
     {
         title: 'Social Website',
-        backgroundImage: socialWebSite,
-        description: 'Web Development'
+        backgroundImage: social,
+        description: 'class components, HOCs',
+        demoLink: 'https://Goblester.github.io/social-website',
+        codeLink: 'https://github.com/Goblester/social-website'
     },
     {
-        title: 'Social Website',
-        backgroundImage: socialWebSite,
-        description: 'Web Development'
+        title: 'Todo-List',
+        backgroundImage: todo,
+        description: 'React hooks, Redux-toolKit',
+        demoLink: 'https://Goblester.github.io/todo-list',
+        codeLink: 'https://github.com/Goblester/todo-list'
     },
     {
-        title: 'Social Website',
-        backgroundImage: socialWebSite,
-        description: 'Web Development'
+        title: 'Cards-app',
+        backgroundImage: cards,
+        description: 'React, Redux, TypeScript',
+        demoLink: 'https://Goblester.github.io/cards-app',
+        codeLink: 'https://github.com/Goblester/todo-list'
     },
     {
-        title: 'Social Website',
-        backgroundImage: socialWebSite,
-        description: 'Web Development'
+        title: 'Test components',
+        backgroundImage: test,
+        description: 'simple tasks',
+        demoLink: 'https://Goblester.github.io/test-components',
+        codeLink: 'https://github.com/Goblester/tests-components'
     },
     {
-        title: 'Social Website',
-        backgroundImage: socialWebSite,
-        description: 'Web Development'
+        title: 'Counter',
+        backgroundImage: counter,
+        description: 'Local storage training',
+        demoLink: 'https://Goblester.github.io/counter',
+        codeLink: 'https://github.com/Goblester/counter'
     },
     {
-        title: 'Social Website',
+        title: 'Future Project',
         backgroundImage: socialWebSite,
-        description: 'Web Development'
+        description: 'In Progress...',
+        demoLink: '',
+        codeLink: ''
     }
 ]
 
@@ -48,6 +65,8 @@ export type ProjectType = {
     description: string
     title: string
     backgroundImage: string
+    demoLink: string
+    codeLink: string
 }
 
 type SkillsStateType = Array<ProjectType>

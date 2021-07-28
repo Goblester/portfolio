@@ -1,9 +1,11 @@
 import styles from './Portfolio.module.scss';
 
-export function Project({title, description, backgroundImage}: {
+export function Project({title, description, backgroundImage, codeLink, demoLink}: {
     title: string
     description: string
     backgroundImage: string
+    codeLink: string
+    demoLink: string
 }) {
     return (
         <div className={styles.item}>
@@ -22,11 +24,10 @@ export function Project({title, description, backgroundImage}: {
                             <span>{description}</span>
                         </p>
                         <h4><a>{title}</a></h4>
-                        <div className={styles.button}><a href={''} className={styles.rnBtn}>VIEW DEMO</a></div>
-                        <div className={styles.button}><a href={''} className={styles.rnBtn}>VIEW CODE</a></div>
+                        <div className={styles.button}><a href={demoLink} className={styles.rnBtn}>VIEW DEMO</a></div>
+                        <div className={styles.button}><a href={codeLink} className={styles.rnBtn}>VIEW CODE</a></div>
                     </div>
                 </div>
-                <a href={''}></a>
             </div>
 
         </div>
