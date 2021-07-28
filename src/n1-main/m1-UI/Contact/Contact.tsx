@@ -1,7 +1,6 @@
 import styles from './Contact.module.scss';
 import styleContainer from '../common/styles/styleContainer.module.scss';
-import {Title} from '../common/Title/Title';
-import photo from './../../../assets/photo/about-9.jpg'
+import photo from './../../../assets/photo/photo-1.jpg';
 
 export function Contact() {
     return (
@@ -11,7 +10,8 @@ export function Contact() {
                     <div className={`${styles.col} ${styles.order2}`}>
                         <div className={styles.info}>
                             <h2>Contact Me</h2>
-                            <p>I am available for distant work. Connect with me via phone: <span>+7-911-111-11-11</span> or
+                            <p>I am available for distant work. Connect with me via
+                                phone: <span>+7-911-111-11-11</span> or
                                 email: <span>admin@example.com</span></p>
                         </div>
                         <form className={styles.formContainer}>
