@@ -9,9 +9,11 @@
     .col {
       padding-left: 25px;
       padding-right: 25px;
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @media only screen and (max-width: 991px) {
         padding-left: 15px !important;
         padding-right: 15px !important;
+        flex: 0 0 100%;
+        max-width: 100%;
       }
       @media (min-width: 992px) {
         -ms-flex: 0 0 50%;

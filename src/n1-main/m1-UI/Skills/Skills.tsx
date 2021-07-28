@@ -13,11 +13,13 @@ export function Skills() {
         <section className={styles.skills} id={'skills'}>
             <div className={styleContainer.container}>
 
-                <Title title={'My Skills'}  description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}/>
+                <Title title={'My Skills'}
+                       description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}/>
                 <div className={styleContainer.row}>
                     {
-                        skills.map(sk => {
-                            return <Skill title={sk.title}
+                        skills.map((sk, ind) => {
+                            return <Skill key={sk.title + ind}
+                                          title={sk.title}
                                           logo={sk.logo}
                                           description={sk.description}/>
                         })

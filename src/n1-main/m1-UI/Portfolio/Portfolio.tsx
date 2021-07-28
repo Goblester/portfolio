@@ -18,7 +18,8 @@ export function Portfolio() {
 
                     <div className={`${styleContainer.itemsContainer} ${styles.container}`}>
                         {
-                            projects.map(pr => <Project title={pr.title}
+                            projects.map((pr,ind) => <Project key={pr.title+ind}
+                                                        title={pr.title}
                                                         description={pr.description}
                                                         backgroundImage={pr.backgroundImage}/>)
                         }

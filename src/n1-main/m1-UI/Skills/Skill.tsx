@@ -9,7 +9,7 @@ export function Skill({title, description, logo}: {
     return (
         <div className={stContainer.flexItem}>
             <div className={styles.item}>
-                <a href={''}>
+                <a href={'#top'}>
                     <div className={styles.service}>
                         <img src={logo} className={styles.logo} alt=""/>
                         <div className={styles.content}>
