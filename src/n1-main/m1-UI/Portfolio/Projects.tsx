@@ -11,11 +11,11 @@ export function Projects() {
     const projects = useSelector<AppStoreType, Array<ProjectType>>(state => state.projects);
 
     return (
-        <section className={styles.portfolio} id={'portfolio'}>
+        <section className={styles.portfolio} id={'projects'}>
             <div className={styleContainer.container}>
                 <div className={styles.secondContainer}>
                     <Title title={'My Latest Projects'}
-                           description={"I've taken part in creating learning app,developed login page, modal windows, tests, menu, and design"}/>
+                           description={'I\'ve taken part in creating learning app,developed login page, modal windows, tests, menu, and design'}/>
 
                     <div className={styles.container}>
                         {

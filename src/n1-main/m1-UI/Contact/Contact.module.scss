@@ -5,8 +5,10 @@
 .contact {
   background-color: #101010;
   font-family: $primaryFontFamily;
+
   .row {
     margin: 0 -25px;
+
     .itemContainer {
       padding: 0 25px;
       @media only screen and (max-width: 991px) {
@@ -20,17 +22,21 @@
         flex: 0 0 50%;
         max-width: 50%;
       }
-      .info{
+
+      .info {
         margin-top: -20px;
         margin-bottom: 50px !important;
-        h2{
+
+        h2 {
           margin: 0 0 8px 0;
         }
+
         p {
           color: #9c9eaa;
-          margin: 0 ;
+          margin: 0;
           font-size: 18px;
           line-height: 30px;
+
           span {
             white-space: nowrap;
             color: #f8f8f8;
@@ -44,6 +50,19 @@
         justify-content: space-between;
         min-height: 300px;
         align-items: flex-start;
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus,
+        {
+          -webkit-text-fill-color: $primaryColorDark;
+          -webkit-box-shadow: 0 0 0 1000px transparent inset;
+          transition: 5000s ease-in-out 0s;
+          background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
+        }
 
         .inputForm {
           @include text($primaryFontFamily, 15px, 400, 46px);
@@ -74,7 +93,8 @@
           border-radius: 6px;
           display: inline-block;
           transition: .3s;
-          &:hover{
+
+          &:hover {
             box-shadow: 0 10px 15px 0 rgba(249, 0, 77, .1);
             color: $secondaryColor;
             transform: translateY(-5px);
@@ -89,6 +109,7 @@
           width: 100%;
           border-radius: 5px;
         }
+
         @media only screen and (max-width: 991px) {
           margin-bottom: 40px;
         }

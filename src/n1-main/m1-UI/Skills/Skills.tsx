@@ -14,7 +14,7 @@ export function Skills() {
             <div className={styleContainer.container}>
 
                 <Title title={'My Skills'}
-                       description={'I used these following developer technologies:'}/>
+                       description={'I use these following developer technologies:'}/>
                 <div className={styleContainer.row}>
                     {
                         skills.map((sk, ind) => {

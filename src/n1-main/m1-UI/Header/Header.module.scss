@@ -5,9 +5,7 @@
   position: fixed;
   background: black;
   animation: smoothScroll 1s forwards;
-  @media (max-width: 991px) {
-    padding: 15px 50px;
-  }
+
 }
 
 @keyframes smoothScroll {
@@ -21,9 +19,6 @@
 
 .absolute {
   position: absolute;
-  @media (max-width: 991px) {
-    padding: 20px 50px;
-  }
 }
 
 
@@ -33,7 +28,9 @@
   left: 0;
   right: 0;
   padding: 0 50px;
-
+  @media screen and (max-width: 991px) {
+    padding: 15px 10px;
+  }
   .container {
     @include flexContainer(row, space-between, center);
     @media screen and (min-width: 1261px) {
@@ -42,8 +39,10 @@
     @media screen and (max-width: 991px) {
       justify-content: flex-end;
     }
+
     .links {
       line-height: 28px;
+
       a {
         font-size: 18px;
         opacity: .8;
@@ -52,6 +51,14 @@
         width: 30px;
         top: 0;
         transition: $primaryTransition;
+        @media only screen and (max-width: 575px) {
+          width: 28px;
+          font-size: 14px;
+        }
+        @media only screen and (max-width: 767px) {
+          margin: 0;
+        }
+
         &:hover {
           top: -5px;
           opacity: 1;

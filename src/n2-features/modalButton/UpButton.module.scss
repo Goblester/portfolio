@@ -1,4 +1,4 @@
-@import "src/n1-main/m1-UI/common/styles/variables";
+@import '../../n1-main/m1-UI/common/styles/variables';
 
 
 .button {
@@ -14,7 +14,7 @@
   border-radius: 50px;
   z-index: 9811 !important;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 10%);
-  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  transition: $primaryTransition;
   position: fixed;
   .path{
     position: absolute;

@@ -2,6 +2,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGithubAlt, faLinkedinIn, faTelegramPlane, faVk} from '@fortawesome/free-brands-svg-icons';
 import {faFileCode} from '@fortawesome/free-regular-svg-icons';
 import React from 'react';
+import { Link } from 'react-scroll';
 
 
 export const Links = () => {

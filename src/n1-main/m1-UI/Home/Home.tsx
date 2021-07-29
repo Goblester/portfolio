@@ -1,6 +1,7 @@
 import styles from './Home.module.scss';
 import styleContainer from '../common/styles/styleContainer.module.scss';
 import {Header} from '../Header/Header';
+import ReactTypingEffect from 'react-typing-effect';
 
 export function Home() {
 
@@ -12,7 +13,10 @@ export function Home() {
                 <div className={styleContainer.row}>
                     <div className={styleContainer.col12}>
                         <div className={styles.innerText}>
-                            <span className={styles.jobPosition}>FRONT-END DEVELOPER</span>
+
+                            <span className={styles.jobPosition}>
+                                <ReactTypingEffect text={'FRONT-END DEVELOPER'}/>
+                            </span>
                             <h1>Hello, i'm <span>Daniil</span> Welcome to my page.</h1>
                         </div>
                     </div>

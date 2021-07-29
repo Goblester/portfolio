@@ -9,7 +9,6 @@ export function Footer() {
             <div className={styleContainer.container}>
                 <div className={`${styleContainer.row} ${styles.row}`}>
                     <div className={styles.item}>
-
                     </div>
                     <div className={`${styleContainer.itemsContainer} ${styles.container} ${styles.item}`}>
                         <Links/>

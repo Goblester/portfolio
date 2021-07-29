@@ -4,6 +4,7 @@ import React from 'react';
 import styles from './UpButton.module.scss';
 import {useSelector} from 'react-redux';
 import {AppStoreType} from '../../n1-main/m2-BLL/Store';
+import {Link} from 'react-scroll';
 
 
 export const UpButton = () => {
@@ -18,8 +19,8 @@ export const UpButton = () => {
     }
 
     return (
-        <a href={'#top'} className={styles.button}>
+        <Link to={'home'} duration={500} offset={1} className={styles.button} smooth={true}>
             <FontAwesomeIcon icon={faArrowUp} className={styles.path}/>
-        </a>
+        </Link>
     )
 }
