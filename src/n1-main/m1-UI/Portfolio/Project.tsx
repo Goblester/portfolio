@@ -8,15 +8,11 @@ export function Project({title, description, backgroundImage, codeLink, demoLink
     demoLink: string
 }) {
     return (
-        <div className={styles.item}>
+        <div className={styles.itemContainer}>
             <div className={styles.project}>
                 <div className={styles.thumbnailInner}>
                     <div className={styles.thumbnailImage} style={{backgroundImage: `url(${backgroundImage})`}}>
                     </div>
-                    <div className={styles.blrThumbnailImage} style={{backgroundImage: `url(${backgroundImage})`}}>
-
-                    </div>
-
                 </div>
                 <div className={styles.content}>
                     <div className={styles.inner}>

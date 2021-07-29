@@ -10,7 +10,7 @@ type TitleProps = {
 export const Title: React.FC<TitleProps> = ({title, description}: TitleProps) => {
     return (
         <div className={stContainer.row}>
-            <div className={styles.col}>
+            <div className={styles.container}>
                 <h2 className={styles.title}>{title}</h2>
                 <p>{description}</p>
             </div>

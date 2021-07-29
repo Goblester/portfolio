@@ -8,12 +8,8 @@ export function Navigation() {
 
     const [showMenu, setShowMenu] = useState<boolean>(false);
 
-    const onShowClick = () => {
-        setShowMenu(true);
-    }
-    const onCloseClick = () => {
-        setShowMenu(false);
-    }
+    const onShowClick = () => {setShowMenu(true);}
+    const onCloseClick = () => {setShowMenu(false);}
 
     return (
         <div className={styles.navigationWrapper}>
@@ -23,7 +19,7 @@ export function Navigation() {
                        className={`${styles.navigation} ${showMenu ? styles.right : ''}`}>
                 <li><a href="#home" onClick={onCloseClick}>Home</a></li>
                 <li><a href="#skills" onClick={onCloseClick}>Skills</a></li>
-                <li><a href="#portfolio" onClick={onCloseClick}>Portfolio</a></li>
+                <li><a href="#portfolio" onClick={onCloseClick}>Projects</a></li>
                 <li><a href="#contact" onClick={onCloseClick}>Contact</a></li>
                 {showMenu &&
                 <div className={styles.close}>

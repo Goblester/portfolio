@@ -1,17 +1,15 @@
-@import "src/n1-main/m1-UI/common/styles/variables";
+@import '../common/styles/mixins';
+@import '../common/styles/variables';
 
 .fixed {
   position: fixed;
-  padding: 0 50px;
   background: black;
-  top: 0;
-  left: 0;
-  right: 0;
   animation: smoothScroll 1s forwards;
   @media (max-width: 991px) {
     padding: 15px 50px;
   }
 }
+
 @keyframes smoothScroll {
   0% {
     transform: translateY(-40px);
@@ -22,46 +20,38 @@
 }
 
 .absolute {
-  padding: 0 50px;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: auto;
   @media (max-width: 991px) {
     padding: 20px 50px;
   }
 }
 
 
-
 .header {
   z-index: 999;
-  div.container {
-    justify-content: space-between;
-    padding: 0;
-    @media (max-width: 991px) {
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 50px;
+
+  .container {
+    @include flexContainer(row, space-between, center);
+    @media screen and (min-width: 1261px) {
+      min-width: 100%;
+    }
+    @media screen and (max-width: 991px) {
       justify-content: flex-end;
     }
-
     .links {
-      font-size: 16px;
       line-height: 28px;
-
       a {
+        font-size: 18px;
         opacity: .8;
         display: inline-block;
-        position: relative;
         margin: 6px;
-        border: 0 none;
         width: 30px;
         top: 0;
-        height: auto;
-        text-align: left;
-        line-height: inherit;
-        font-size: 18px;
-        transition: all .3s cubic-bezier(.645, .045, .355, 1);
-
+        transition: $primaryTransition;
         &:hover {
           top: -5px;
           opacity: 1;

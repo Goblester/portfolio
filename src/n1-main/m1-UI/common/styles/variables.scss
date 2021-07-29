@@ -5,10 +5,7 @@ $bodyColor: #191919;
 $sndBodyColor: #101010;
 
 
-@mixin flexContainer($direction, $justify, $align) {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-}
+$primaryFontFamily: 'Poppins', sans-serif;
+$secondaryFontFamily: "Montserrat", sans-serif;
+
+$primaryTransition:  all .3s cubic-bezier(.645, .045, .355, 1);

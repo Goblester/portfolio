@@ -6,18 +6,18 @@ import {useSelector} from 'react-redux';
 import {AppStoreType} from '../../m2-BLL/Store';
 import {ProjectType} from '../../m2-BLL/projectsReducer';
 
-export function Portfolio() {
+export function Projects() {
 
     const projects = useSelector<AppStoreType, Array<ProjectType>>(state => state.projects);
 
     return (
         <section className={styles.portfolio} id={'portfolio'}>
             <div className={styleContainer.container}>
-                <div className={styleContainer.secondContainer}>
+                <div className={styles.secondContainer}>
                     <Title title={'My Latest Projects'}
-                           description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}/>
+                           description={"I've taken part in creating learning app,developed login page, modal windows, tests, menu, and design"}/>
 
-                    <div className={`${styleContainer.itemsContainer} ${styles.container}`}>
+                    <div className={styles.container}>
                         {
                             projects.map((pr, ind) => <Project key={pr.title + ind}
                                                                title={pr.title}

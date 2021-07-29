@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 import styleContainer from '../common/styles/styleContainer.module.scss';
-import {Links} from '../Header/Links';
+import {Links} from '../Links/Links';
 
 export function Footer() {
     return (

@@ -29,7 +29,7 @@
            transform: translateY(-3px);
        }
    }
-    .item{
+    .itemContainer{
         flex: 0 0 33.33333%;
         @media only screen and (max-width: 991px) {
             flex: 0 0 100%;
