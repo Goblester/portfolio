@@ -2,8 +2,31 @@ import styles from './Contact.module.scss';
 import styleContainer from '../common/styles/styleContainer.module.scss';
 import photo from './../../../assets/photo/photo-1.jpg';
 import {Fade} from 'react-awesome-reveal';
+import {ChangeEvent, FormEventHandler, useState} from 'react';
+import {useDispatch} from 'react-redux';
+import {sendMessage} from '../../m2-BLL/appReducer';
 
 export function Contact() {
+    const dispatch = useDispatch();
+    const [name, setName] = useState('');
+    const [mail, setMail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const onNameInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setName(e.currentTarget.value);
+    }
+    const onMailInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setMail(e.currentTarget.value);
+    }
+    const onMessageTextAreaChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
+        setMessage(e.currentTarget.value);
+    }
+
+    const submitHandle = (e:any) => {
+        e.preventDefault();
+        dispatch(sendMessage({name, mail, message}));
+    }
+
     return (
         <section className={styles.contact} id={'contact'}>
             <div className={styleContainer.container}>
@@ -16,11 +39,25 @@ export function Contact() {
                                     phone: <span>+7-981-113-27-79</span> or
                                     email: <span>ogloblin.daniil@yandex.ru</span></p>
                             </div>
-                            <form className={styles.formContainer}>
-                                <input className={styles.inputForm} name={'your-name'} placeholder={'Your Name *'}/>
-                                <input className={styles.inputForm} name={'your-email'} placeholder={'Your Email *'}/>
-                                <textarea className={`${styles.inputForm} ${styles.textAreaForm}`} name={'your-message'}
-                                          placeholder={'Your Message'} cols={40} rows={10}/>
+                            <form className={styles.formContainer} onSubmit={submitHandle}>
+                                <input className={styles.inputForm}
+                                       name={'name'}
+                                       placeholder={'Your Name *'}
+                                       value={name}
+                                       onChange={onNameInputChange}/>
+                                <input className={styles.inputForm}
+                                       type={'email'}
+                                       name={'email'}
+                                       placeholder={'Your Email *'}
+                                       value={mail}
+                                       onChange={onMailInputChange}/>
+                                <textarea className={`${styles.inputForm} ${styles.textAreaForm}`}
+                                          name={'your-message'}
+                                          placeholder={'Your Message'}
+                                          cols={40}
+                                          rows={10}
+                                          value={message}
+                                          onChange={onMessageTextAreaChange}/>
                                 <button type={'submit'} className={styles.button}>SEND MESSAGE</button>
                             </form>
                         </Fade>

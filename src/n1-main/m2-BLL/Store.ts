@@ -1,7 +1,8 @@
-import {combineReducers, createStore} from 'redux';
+import {applyMiddleware, combineReducers, createStore} from 'redux';
 import {skillsReducer} from './skillsReducer';
 import {projectsReducer} from './projectsReducer';
 import {appReducer} from './appReducer';
+import thunk from 'redux-thunk';
 
 
 const reducers = combineReducers({
@@ -11,6 +12,6 @@ const reducers = combineReducers({
 })
 
 
-export const store = createStore(reducers)
+export const store = createStore(reducers, applyMiddleware(thunk))
 
 export type AppStoreType = ReturnType<typeof reducers>
