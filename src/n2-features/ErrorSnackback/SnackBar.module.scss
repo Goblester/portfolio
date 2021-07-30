@@ -1,0 +1,49 @@
+@import "./src/n1-main/m1-UI/common/styles/variables";
+@import "./src/n1-main/m1-UI/common/styles/mixins";
+
+
+.container {
+  @include text($primaryFontFamily, 24px, 500, 30px);
+  @include flexContainer(row, center, center);
+  position: fixed;
+  width: 800px;
+  height: 50px;
+  color: $secondaryColor;
+  background: #fff;
+  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  transition: $primaryTransition;
+  @media screen and (min-width: 576px) {
+    top: 100px;
+  }
+  @media screen and (max-width: 991px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 575px) {
+    width: 100%;
+    border-radius: 0;
+    @include text($primaryFontFamily, 20px, 500, 24px);
+    bottom: 0;
+  }
+  div:first-child{
+    display: inline-block;
+  }
+  .close {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    transition: $primaryTransition;
+    span {
+      display: block;
+      height: 24px;
+      width: 24px;
+      font-size: 24px;
+    }
+    &:hover{
+      color:#9c9eaa;
+    }
+  }
+}
+
