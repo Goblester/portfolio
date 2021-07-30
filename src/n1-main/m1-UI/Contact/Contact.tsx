@@ -2,15 +2,20 @@ import styles from './Contact.module.scss';
 import styleContainer from '../common/styles/styleContainer.module.scss';
 import photo from './../../../assets/photo/photo-1.jpg';
 import {Fade} from 'react-awesome-reveal';
-import {ChangeEvent, FormEventHandler, useState} from 'react';
-import {useDispatch} from 'react-redux';
-import {sendMessage} from '../../m2-BLL/appReducer';
+import {ChangeEvent, useState} from 'react';
+import {useDispatch, useSelector} from 'react-redux';
+import {sendMessage, StatusType} from '../../m2-BLL/appReducer';
+import {AppStoreType} from '../../m2-BLL/Store';
 
 export function Contact() {
     const dispatch = useDispatch();
     const [name, setName] = useState('');
     const [mail, setMail] = useState('');
     const [message, setMessage] = useState('');
+    const status = useSelector<AppStoreType, StatusType>(state => state.app.status);
+
+    const disabledButton = status === 'loading';
+    const buttonClassName = disabledButton?styles.disabledButton:styles.button;
 
     const onNameInputChange = (e: ChangeEvent<HTMLInputElement>) => {
         setName(e.currentTarget.value);
@@ -22,7 +27,7 @@ export function Contact() {
         setMessage(e.currentTarget.value);
     }
 
-    const submitHandle = (e:any) => {
+    const submitHandle = (e: any) => {
         e.preventDefault();
         dispatch(sendMessage({name, mail, message}));
     }
@@ -58,7 +63,7 @@ export function Contact() {
                                           rows={10}
                                           value={message}
                                           onChange={onMessageTextAreaChange}/>
-                                <button type={'submit'} className={styles.button}>SEND MESSAGE</button>
+                                <button disabled={disabledButton} type={'submit'} className={buttonClassName}>SEND MESSAGE</button>
                             </form>
                         </Fade>
                     </div>

@@ -7,14 +7,9 @@ const instance = axios.create({
 
 export const contactAPI = {
     sendMessage: (data: MessageDataType) => {
-        // return instance.post('/send', {
-        //     ...data
-        // });
-        return new Promise(res => {
-            setTimeout(() => {
-                res(null);
-            }, 6000)
-        })
+        return instance.post('/send', {
+            ...data
+        });
     }
 }
 
