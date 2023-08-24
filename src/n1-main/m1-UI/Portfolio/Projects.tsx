@@ -19,12 +19,15 @@ export function Projects() {
 
                     <div className={styles.container}>
                         {
-                            projects.map((pr, ind) => <Project key={pr.title + ind}
-                                                               title={pr.title}
-                                                               description={pr.description}
-                                                               backgroundImage={pr.backgroundImage}
-                                                               codeLink={pr.codeLink}
-                                                               demoLink={pr.demoLink}/>)
+                            projects.map((pr) =>
+                                <Project
+                                    key={pr.title}
+                                    title={pr.title}
+                                    description={pr.description}
+                                    backgroundImage={pr.backgroundImage}
+                                    codeLink={pr.codeLink}
+                                    demoLink={pr.demoLink}
+                                />)
                         }
                     </div>
                 </div>

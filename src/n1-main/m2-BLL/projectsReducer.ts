@@ -1,11 +1,18 @@
-import socialWebSite from './../../assets/photo/portfolio-7.jpg';
 import social from './../../assets/photo/portfolio-1.jpg';
 import todo from './../../assets/photo/portfolio-2.png';
 import cards from './../../assets/photo/portfolio-3.png';
 import test from './../../assets/photo/portfolio-4.png';
 import counter from './../../assets/photo/portfolio-5.jpg';
+import wedding from './../../assets/photo/wedding.jpg';
 
 const initialState: Array<ProjectType> = [
+    {
+        title: 'My wedding website',
+        backgroundImage: wedding,
+        description: 'created with svelte js',
+        demoLink: 'https://daniilolgawedding.online',
+        codeLink: 'https://github.com/Goblester/wedding'
+    },
     {
         title: 'Social Website',
         backgroundImage: social,
@@ -41,13 +48,6 @@ const initialState: Array<ProjectType> = [
         demoLink: 'https://Goblester.github.io/counter',
         codeLink: 'https://github.com/Goblester/counter'
     },
-    {
-        title: 'Future Project',
-        backgroundImage: socialWebSite,
-        description: 'In Progress...',
-        demoLink: '',
-        codeLink: ''
-    }
 ]
 
 
