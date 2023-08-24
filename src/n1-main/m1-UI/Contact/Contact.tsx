@@ -6,9 +6,10 @@ import {ChangeEvent, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {sendMessage, StatusType} from '../../m2-BLL/appReducer';
 import {AppStoreType} from '../../m2-BLL/Store';
+import {ThunkDispatch} from "redux-thunk";
 
 export function Contact() {
-    const dispatch = useDispatch();
+    const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
     const [name, setName] = useState('');
     const [mail, setMail] = useState('');
     const [message, setMessage] = useState('');
