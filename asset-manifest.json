@@ -1,33 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.892b17c2.chunk.css",
-    "main.js": "/portfolio/static/js/main.22b1123b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.22b1123b.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.b94c1114.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.b94c1114.js.map",
-    "static/js/2.78cba40f.chunk.js": "/portfolio/static/js/2.78cba40f.chunk.js",
-    "static/js/2.78cba40f.chunk.js.map": "/portfolio/static/js/2.78cba40f.chunk.js.map",
-    "static/js/3.4556cf08.chunk.js": "/portfolio/static/js/3.4556cf08.chunk.js",
-    "static/js/3.4556cf08.chunk.js.map": "/portfolio/static/js/3.4556cf08.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.851bf3da.css",
+    "main.js": "/portfolio/static/js/main.2ba4fe10.js",
+    "static/js/496.44174072.chunk.js": "/portfolio/static/js/496.44174072.chunk.js",
+    "static/media/photo.png": "/portfolio/static/media/photo.c21eaf09a4643e2e8fb8.png",
+    "static/media/wedding.jpg": "/portfolio/static/media/wedding.995fda2ee2c80f827689.jpg",
+    "static/media/portfolio-3.png": "/portfolio/static/media/portfolio-3.026b0c209bb6efe531b6.png",
+    "static/media/portfolio-2.png": "/portfolio/static/media/portfolio-2.6668fa32905d4ac1afc3.png",
+    "static/media/portfolio-1.jpg": "/portfolio/static/media/portfolio-1.8dda88b6ed2defb87a55.jpg",
+    "static/media/portfolio-4.png": "/portfolio/static/media/portfolio-4.cead7827e53cf951f558.png",
+    "static/media/photo-1.jpg": "/portfolio/static/media/photo-1.6bf2cadc0631496debf3.jpg",
+    "static/media/portfolio-5.jpg": "/portfolio/static/media/portfolio-5.46da146f7566bd7d8165.jpg",
+    "static/media/atom.png": "/portfolio/static/media/atom.1f52ca253ce403eacf05.png",
+    "static/media/redux.png": "/portfolio/static/media/redux.ecce4525fcbbae8fccab.png",
+    "static/media/design.png": "/portfolio/static/media/design.9be7c47864a3382d3a9d.png",
     "index.html": "/portfolio/index.html",
-    "static/css/main.892b17c2.chunk.css.map": "/portfolio/static/css/main.892b17c2.chunk.css.map",
-    "static/js/2.78cba40f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.78cba40f.chunk.js.LICENSE.txt",
-    "static/media/atom.1f52ca25.png": "/portfolio/static/media/atom.1f52ca25.png",
-    "static/media/design.9be7c478.png": "/portfolio/static/media/design.9be7c478.png",
-    "static/media/photo-1.6bf2cadc.jpg": "/portfolio/static/media/photo-1.6bf2cadc.jpg",
-    "static/media/Home.module.scss": "/portfolio/static/media/photo.c21eaf09.png",
-    "static/media/portfolio-1.8dda88b6.jpg": "/portfolio/static/media/portfolio-1.8dda88b6.jpg",
-    "static/media/portfolio-2.6668fa32.png": "/portfolio/static/media/portfolio-2.6668fa32.png",
-    "static/media/portfolio-3.026b0c20.png": "/portfolio/static/media/portfolio-3.026b0c20.png",
-    "static/media/portfolio-4.cead7827.png": "/portfolio/static/media/portfolio-4.cead7827.png",
-    "static/media/portfolio-5.46da146f.jpg": "/portfolio/static/media/portfolio-5.46da146f.jpg",
-    "static/media/portfolio-7.247bdbce.jpg": "/portfolio/static/media/portfolio-7.247bdbce.jpg",
-    "static/media/redux.ecce4525.png": "/portfolio/static/media/redux.ecce4525.png"
+    "main.851bf3da.css.map": "/portfolio/static/css/main.851bf3da.css.map",
+    "main.2ba4fe10.js.map": "/portfolio/static/js/main.2ba4fe10.js.map",
+    "496.44174072.chunk.js.map": "/portfolio/static/js/496.44174072.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.b94c1114.js",
-    "static/js/2.78cba40f.chunk.js",
-    "static/css/main.892b17c2.chunk.css",
-    "static/js/main.22b1123b.chunk.js"
+    "static/css/main.851bf3da.css",
+    "static/js/main.2ba4fe10.js"
   ]
 }
