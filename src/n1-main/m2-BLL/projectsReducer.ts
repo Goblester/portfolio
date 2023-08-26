@@ -4,6 +4,7 @@ import cards from './../../assets/photo/portfolio-3.png';
 import test from './../../assets/photo/portfolio-4.png';
 import counter from './../../assets/photo/portfolio-5.jpg';
 import wedding from './../../assets/photo/wedding.jpg';
+import dota2 from './../../assets/photo/dota2.jpg';
 
 const initialState: Array<ProjectType> = [
     {
@@ -11,6 +12,13 @@ const initialState: Array<ProjectType> = [
         backgroundImage: wedding,
         description: 'created with svelte js',
         demoLink: 'https://daniilolgawedding.online',
+        codeLink: 'https://github.com/Goblester/dota-statistics'
+    },
+    {
+        title: 'Dota 2 statistics',
+        backgroundImage: dota2,
+        description: 'Next JS and React 18 server/client components api. Eslint and Prettier test',
+        demoLink: 'https://dapper-medovik-0946d5.netlify.app/',
         codeLink: 'https://github.com/Goblester/wedding'
     },
     {
