@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.851bf3da.css",
-    "main.js": "/portfolio/static/js/main.2ba4fe10.js",
+    "main.js": "/portfolio/static/js/main.41742693.js",
     "static/js/496.44174072.chunk.js": "/portfolio/static/js/496.44174072.chunk.js",
     "static/media/photo.png": "/portfolio/static/media/photo.c21eaf09a4643e2e8fb8.png",
     "static/media/wedding.jpg": "/portfolio/static/media/wedding.995fda2ee2c80f827689.jpg",
@@ -9,6 +9,7 @@
     "static/media/portfolio-2.png": "/portfolio/static/media/portfolio-2.6668fa32905d4ac1afc3.png",
     "static/media/portfolio-1.jpg": "/portfolio/static/media/portfolio-1.8dda88b6ed2defb87a55.jpg",
     "static/media/portfolio-4.png": "/portfolio/static/media/portfolio-4.cead7827e53cf951f558.png",
+    "static/media/dota2.jpg": "/portfolio/static/media/dota2.f523ef542af0fecc2068.jpg",
     "static/media/photo-1.jpg": "/portfolio/static/media/photo-1.6bf2cadc0631496debf3.jpg",
     "static/media/portfolio-5.jpg": "/portfolio/static/media/portfolio-5.46da146f7566bd7d8165.jpg",
     "static/media/atom.png": "/portfolio/static/media/atom.1f52ca253ce403eacf05.png",
@@ -16,11 +17,11 @@
     "static/media/design.png": "/portfolio/static/media/design.9be7c47864a3382d3a9d.png",
     "index.html": "/portfolio/index.html",
     "main.851bf3da.css.map": "/portfolio/static/css/main.851bf3da.css.map",
-    "main.2ba4fe10.js.map": "/portfolio/static/js/main.2ba4fe10.js.map",
+    "main.41742693.js.map": "/portfolio/static/js/main.41742693.js.map",
     "496.44174072.chunk.js.map": "/portfolio/static/js/496.44174072.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.851bf3da.css",
-    "static/js/main.2ba4fe10.js"
+    "static/js/main.41742693.js"
   ]
 }
