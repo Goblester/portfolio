@@ -8,26 +8,4 @@
   background: center no-repeat url("./../../../assets/photo/photo.png");
   background-size: cover;
   overflow: hidden;
-
-  .title {
-    display: flex;
-    position: absolute;
-    bottom: 15vh;
-    @include text($whiteColor, 75px, 300, 130%);
-    font-size: max(6vw, 12vw);
-    animation: 15s scrollText infinite linear;
-  }
-
-  h1 {
-    width: max-content;
-    color: $whiteColor;
-  }
 }
-
-
-@keyframes scrollText {
-  from   { transform: translateX(0%); }
-  to { transform: translateX(-50%); }
-}
-
-

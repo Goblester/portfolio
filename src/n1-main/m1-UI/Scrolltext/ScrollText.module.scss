@@ -1,0 +1,17 @@
+@import '../common/styles/mixins';
+@import '../common/styles/variables';
+
+.title {
+  display: flex;
+  position: absolute;
+  bottom: 15vh;
+  @include text($whiteColor, 75px, 300, 130%);
+  font-size: max(6vw, 9vw);
+  animation: 15s scrollText infinite linear;
+}
+
+h1 {
+  width: max-content;
+  color: $whiteColor;
+}
+
