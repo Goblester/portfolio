@@ -3,55 +3,31 @@
 
 
 .home {
+  position: relative;
+  min-height: 100vh;
   background: center no-repeat url("./../../../assets/photo/photo.png");
   background-size: cover;
-  position: relative;
+  overflow: hidden;
 
-  .innerText {
-    @media screen and (min-width: 1260px) {
-      margin: 150px 0;
-    }
-
-    .jobPosition {
-      display: block;
-      color: $primaryColorDark;
-      @include text($primaryFontFamily, 13px, 400, 20px);
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      font-weight: 400;
-    }
-
-    h1 {
-      @include text($secondaryFontFamily, 75px, 900, 90px);
-      color: #fff;
-      width: 70%;
-      margin: 30px 0;
-      @media only screen and (max-width: 767px) {
-        font-size: 32px;
-        line-height: 49px;
-        width: 100%;
-      }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
-        font-size: 60px;
-        line-height: 77px;
-        width: 85%;
-      }
-      @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        font-size: 75px;
-        line-height: 75px;
-      }
-
-      span {
-        color: #f9004d;
-        font-family: $secondaryFontFamily;
-      }
-    }
+  .title {
+    display: flex;
+    position: absolute;
+    bottom: 15vh;
+    @include text($whiteColor, 75px, 300, 130%);
+    font-size: max(6vw, 12vw);
+    animation: 15s scrollText infinite linear;
   }
 
-
+  h1 {
+    width: max-content;
+    color: $whiteColor;
+  }
 }
 
 
-
+@keyframes scrollText {
+  from   { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
 
 

@@ -10,6 +10,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {changeScrollBelow, StatusType} from './n1-main/m2-BLL/appReducer';
 import {AppStoreType} from './n1-main/m2-BLL/Store';
 import {SnackBar} from './n2-features/ErrorSnackback/SnackBar';
+import {Header} from "./n1-main/m1-UI/Header/Header";
 
 
 
@@ -19,15 +20,14 @@ function App() {
     const status = useSelector<AppStoreType, StatusType>(state=>state.app.status);
 
 
-    const handleScroll = () => {
-        if (window.pageYOffset > 300) {
-            dispatch(changeScrollBelow(true))
-        } else {
-            dispatch(changeScrollBelow(false))
-        }
-    }
-
     useEffect(() => {
+        const handleScroll = () => {
+            if (window.pageYOffset > 300) {
+                dispatch(changeScrollBelow(true))
+            } else {
+                dispatch(changeScrollBelow(false))
+            }
+        }
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll)
@@ -36,6 +36,7 @@ function App() {
 
     return (
         <div className="App">
+            <Header/>
             <Home/>
             <Skills/>
             <Projects/>
