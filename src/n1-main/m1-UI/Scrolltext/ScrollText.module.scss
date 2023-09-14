@@ -5,8 +5,8 @@
   display: flex;
   position: absolute;
   bottom: 15vh;
-  @include text($whiteColor, 75px, 300, 130%);
-  font-size: max(6vw, 9vw);
+  @include text($secondaryFontFamily, 75px, 300, 130%);
+  font-size: max(5vw, 8vw);
   left: 0;
   animation: 15s scrollText infinite linear;
 }
@@ -14,5 +14,7 @@
 h1 {
   width: max-content;
   color: $whiteColor;
+  font-weight: 400;
+  letter-spacing: 5px;
 }
 
