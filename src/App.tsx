@@ -11,6 +11,7 @@ import {changeScrollBelow, StatusType} from './n1-main/m2-BLL/appReducer';
 import {AppStoreType} from './n1-main/m2-BLL/Store';
 import {SnackBar} from './n2-features/ErrorSnackback/SnackBar';
 import {Header} from "./n1-main/m1-UI/Header/Header";
+import {Quote} from "./n1-main/m1-UI/Quote/Quote";
 
 
 
@@ -38,6 +39,7 @@ function App() {
         <div className="App">
             <Header/>
             <Home/>
+            <Quote />
             <Skills/>
             <Projects/>
             <Contact/>

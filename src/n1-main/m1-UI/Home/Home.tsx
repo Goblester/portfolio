@@ -1,15 +1,9 @@
 import s from './Home.module.scss';
 import {ScrollText} from "../Scrolltext/ScrollText";
-import {MotionValue, useScroll, useTransform, motion} from "framer-motion";
+import { useScroll, useTransform, motion} from "framer-motion";
 import {ArrowIcon} from "../Icons/ArrowIcon";
+import {useParallax} from "../common/hooks/useParallax";
 
-type ParallaxOptionsType = {
-    distance: number;
-    maxScroll: number;
-}
-function useParallax(value: MotionValue<number>, {distance, maxScroll }: ParallaxOptionsType) {
-    return useTransform(value, [0, maxScroll], [-distance, distance]);
-}
 
 
 export function Home() {

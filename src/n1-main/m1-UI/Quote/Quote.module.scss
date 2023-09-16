@@ -1,0 +1,43 @@
+
+.container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.quoteTextWrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  height: 39%;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+}
+
+.quoteHeart {
+  stroke-dasharray: 1000;
+  fill: none;
+  stroke: #C32285;
+  stroke-width: 15;
+}
+
+.quoteTextBG {
+  fill: #191919;
+  background: #191919;
+}
+
+.quoteText {
+  padding: 0.5em;
+  font-size: 65px;
+  color: white;
+  fill: white;
+}
