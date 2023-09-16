@@ -45,8 +45,8 @@ export const ScrollText: React.FC = () => {
     return (
         <motion.div style={{x}}
                     className={s.title}>
-            <h1>Daniil Ogloblin&nbsp;—&nbsp;</h1>
-            <h1>Daniil Ogloblin&nbsp;—&nbsp;</h1>
+            <span className={s.name}>Daniil Ogloblin&nbsp;—&nbsp;</span>
+            <span className={s.name}>Daniil Ogloblin&nbsp;—&nbsp;</span>
         </motion.div>
     )
 }

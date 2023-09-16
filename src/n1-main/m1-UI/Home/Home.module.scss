@@ -9,3 +9,16 @@
   background-size: cover;
   overflow: hidden;
 }
+
+.title {
+  position: absolute;
+  top: 50vh;
+  left: 10%;
+  @include text($secondaryFontFamily, 3vh, 300, 130%);
+}
+
+.iconContainer {
+  position: absolute;
+  top: 35vh;
+  left: 10%;
+}

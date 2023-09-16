@@ -1,20 +1,21 @@
 @import '../common/styles/mixins';
 @import '../common/styles/variables';
 
-.title {
-  display: flex;
-  position: absolute;
-  bottom: 15vh;
-  @include text($secondaryFontFamily, 75px, 300, 130%);
-  font-size: max(5vw, 8vw);
-  left: 0;
-  animation: 15s scrollText infinite linear;
-}
+:local {
+  .title {
+    display: flex;
+    position: absolute;
+    bottom: 12vh;
+    left: 0;
+    animation: 15s scrollText infinite linear;
+  }
 
-h1 {
-  width: max-content;
-  color: $whiteColor;
-  font-weight: 400;
-  letter-spacing: 5px;
+  .name {
+    @include text($secondaryFontFamily, max(9vw, 12vw), 300, 130%);
+    width: max-content;
+    color: $whiteColor;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
 }
 
