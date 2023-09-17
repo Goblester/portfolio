@@ -12,6 +12,7 @@ import {AppStoreType} from './n1-main/m2-BLL/Store';
 import {SnackBar} from './n2-features/ErrorSnackback/SnackBar';
 import {Header} from "./n1-main/m1-UI/Header/Header";
 import {Quote} from "./n1-main/m1-UI/Quote/Quote";
+import {MouseTooltip} from "./n1-main/m1-UI/MouseTooltip/MouseTooltip";
 
 
 
@@ -46,6 +47,7 @@ function App() {
             <Footer/>
             <UpButton/>
             {status !== 'idle'&&<SnackBar/>}
+            {/*<MouseTooltip/>*/}
         </div>
     );
 }
