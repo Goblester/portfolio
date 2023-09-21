@@ -12,14 +12,14 @@ import {AppStoreType} from './n1-main/m2-BLL/Store';
 import {SnackBar} from './n2-features/ErrorSnackback/SnackBar';
 import {Header} from "./n1-main/m1-UI/Header/Header";
 import {Quote} from "./n1-main/m1-UI/Quote/Quote";
-import {MouseTooltip} from "./n1-main/m1-UI/MouseTooltip/MouseTooltip";
+import {ProjectsRedesign} from "./n1-main/m1-UI/ProjectsRedesign/ProjectsRedesign";
 
 
-
+const newProjectFlag = false;
 
 function App() {
     const dispatch = useDispatch();
-    const status = useSelector<AppStoreType, StatusType>(state=>state.app.status);
+    const status = useSelector<AppStoreType, StatusType>(state => state.app.status);
 
 
     useEffect(() => {
@@ -40,14 +40,13 @@ function App() {
         <div className="App">
             <Header/>
             <Home/>
-            <Quote />
+            <Quote/>
             <Skills/>
-            <Projects/>
+            {newProjectFlag ? <ProjectsRedesign/> : <Projects/>}
             <Contact/>
             <Footer/>
             <UpButton/>
-            {status !== 'idle'&&<SnackBar/>}
-            {/*<MouseTooltip/>*/}
+            {status !== 'idle' && <SnackBar/>}
         </div>
     );
 }
