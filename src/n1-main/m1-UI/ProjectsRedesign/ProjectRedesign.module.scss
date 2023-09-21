@@ -1,6 +1,7 @@
 @import '../common/styles/variables';
 @import '../common/styles/mixins';
 
+
 .project {
   position: relative;
   display: flex;
@@ -30,16 +31,28 @@
 }
 
 .projectName {
-  @include text($primaryFontFamily, 70px, 300, 1);
+  @include text($primaryColor, 70px, 300, 1);
   width: 70%;
-  padding-left: 10%;
+  padding-left: 7%;
   letter-spacing: 3px;
-
+  transition: all .3s cubic-bezier(.7, 0, .3, 1);;
 }
-
 
 .projectDescription {
   padding-top: 2em;
-  padding-right: 10%;
+  padding-right: 7%;
   @include text($primaryFontFamily, 16px, 300, 1);
+  transition: all .3s cubic-bezier(.7, 0, .3, 1);;
+}
+
+.projectHovered {
+  & .projectDescription {
+    opacity: .5;
+    transform: translateX(4%);
+  }
+
+  & .projectName {
+    opacity: .5;
+    transform: translateX(-4%);
+  }
 }
