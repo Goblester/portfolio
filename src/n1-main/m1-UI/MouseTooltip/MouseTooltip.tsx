@@ -2,6 +2,8 @@ import {AnimatePresence, motion, MotionValue, useTransform, useVelocity} from "f
 import React from "react";
 import {ProjectType} from "../../m2-BLL/projectsReducer";
 import s from './style.module.scss';
+import {useSelector} from "react-redux";
+import {AppStoreType} from "../../m2-BLL/Store";
 
 type PropsType = {
     x: MotionValue<number>;
@@ -11,12 +13,16 @@ type PropsType = {
 
 export const MouseTooltip: React.FC<PropsType> = ({x, y, currentProject}) => {
 
-    // const [project, setProject] = useState(currentProject);
+    const projects = useSelector((state: AppStoreType) => state.projects);
+
+
     const velX = useVelocity(x)
     const velY = useVelocity(y)
 
     const textX = useTransform(velX, (latest) => latest / 1000 * 10);
     const textY = useTransform(velY, (latest) => latest / 1000 * 10);
+
+    const index = projects.findIndex(project => project.title === currentProject?.title)
 
 
     return <AnimatePresence>
@@ -34,18 +40,32 @@ export const MouseTooltip: React.FC<PropsType> = ({x, y, currentProject}) => {
                     </motion.span>
                 </div>
                 <div className={s.overlayContainer}>
-                    <AnimatePresence>
-                        <motion.div key={currentProject.title}
-                                    initial={{y: '-100%'}}
-                                    animate={{y: 0}}
-                                    exit={{y: '100%'}}
-                                    transition={{duration: 2}}
-                                    className={s.overlay}>
-                            <div className={s.imgContainer}>
-                                <img src={currentProject.backgroundImage}/>
+                    <motion.div className={s.slider} animate={{y: -index * 440}} transition={{duration: .35}}>
+                        {projects.map(project => (
+                            <div key={project.title}
+                                // initial={{y: '-100%'}}
+                                // animate={{y: 0}}
+                                // exit={{y: '100%'}}
+                                // transition={{duration: 1}}
+                                 className={s.overlay}>
+                                <div className={s.imgContainer}>
+                                    <img src={project.backgroundImage}/>
+                                </div>
                             </div>
-                        </motion.div>
-                    </AnimatePresence>
+                        ))}
+                    </motion.div>
+                    {/*<AnimatePresence initial={false}>*/}
+                    {/*    <motion.div key={currentProject.title}*/}
+                    {/*                initial={{y: '-100%'}}*/}
+                    {/*                animate={{y: 0}}*/}
+                    {/*                exit={{y: '100%'}}*/}
+                    {/*                transition={{duration: 1}}*/}
+                    {/*                className={s.overlay}>*/}
+                    {/*        <div className={s.imgContainer}>*/}
+                    {/*            <img src={currentProject.backgroundImage} />*/}
+                    {/*        </div>*/}
+                    {/*    </motion.div>*/}
+                    {/*</AnimatePresence>*/}
                 </div>
             </motion.div>}
     </AnimatePresence>

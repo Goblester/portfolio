@@ -65,8 +65,8 @@ export const ProjectsRedesign = () => {
             } else {
                 const childrenHeight = ref.current?.children[0]?.clientHeight || 0;
                 const index = Math.floor((mousePosition.y - top) / childrenHeight);
-                console.log(index);
-                setCurrentProject(projects[index])
+
+                setCurrentProject(projects[index]);
             }
         };
         window.addEventListener('scroll', updateScroll);
@@ -85,7 +85,7 @@ export const ProjectsRedesign = () => {
                     </li>
                 ))}
             </ul>
-            {<MouseTooltip x={x} y={y} currentProject={currentProject}/>}
+            <MouseTooltip x={x} y={y} currentProject={currentProject} />
         </section>
     )
 }
