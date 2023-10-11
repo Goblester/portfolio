@@ -15,7 +15,7 @@ import {Quote} from "./n1-main/m1-UI/Quote/Quote";
 import {ProjectsRedesign} from "./n1-main/m1-UI/ProjectsRedesign/ProjectsRedesign";
 
 
-const newProjectFlag = false;
+const newProjectFlag = true;
 
 function App() {
     const dispatch = useDispatch();

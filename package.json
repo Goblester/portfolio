@@ -23,7 +23,7 @@
     "react-scrollspy": "^3.4.3",
     "redux": "^4.1.0",
     "redux-thunk": "^2.3.0",
-    "typescript": "^5.2.2",
+    "typescript": "^5.2.0",
     "web-vitals": "^3.4.0"
   },
   "homepage": "https://Goblester.github.io/portfolio",
