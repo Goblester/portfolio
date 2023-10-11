@@ -28,31 +28,56 @@
     height: 2px;
     background-color: $primaryColorDark;
   }
+
+  @media(max-width: 1199px) {
+    width: 50%;
+    flex-direction: column;
+    &:first-child::before {
+      display: none;
+    }
+  }
 }
 
 .projectName {
-  @include text($primaryColor, 70px, 300, 1);
-  width: 70%;
+  @include text($primaryColor, 4em, 300, 1);
+  max-width: 70%;
   padding-left: 7%;
   letter-spacing: 3px;
-  transition: all .3s cubic-bezier(.7, 0, .3, 1);;
+  transition: all .3s cubic-bezier(.7, 0, .3, 1);
+
+  @media (max-width: 1199px) {
+    padding-left: 0;
+    max-width: 100%;
+    font-size: 1.75em;
+  }
 }
 
 .projectDescription {
   padding-top: 2em;
   padding-right: 7%;
+  max-width: 30%;
   @include text($primaryFontFamily, 16px, 300, 1);
-  transition: all .3s cubic-bezier(.7, 0, .3, 1);;
+  transition: all .3s cubic-bezier(.7, 0, .3, 1);
+
+  @media (max-width: 1199px) {
+    padding-right: 0;
+    max-width: 100%;
+    font-size: 1em;
+  }
 }
 
 .projectHovered {
   & .projectDescription {
-    opacity: .5;
-    transform: translateX(4%);
+    @media (min-width: 1200px) {
+      opacity: .5;
+      transform: translateX(4%);
+    }
   }
 
   & .projectName {
-    opacity: .5;
-    transform: translateX(-4%);
+    @media (min-width: 1200px) {
+      opacity: .5;
+      transform: translateX(-4%);
+    }
   }
 }

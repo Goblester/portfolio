@@ -40,13 +40,16 @@ export const MouseTooltip: React.FC<PropsType> = ({x, y, currentProject}) => {
                     </motion.a>
                 </div>
                 <div className={s.overlayContainer}>
-                    <motion.div className={s.slider} animate={{y: -index * 440}} transition={{duration: .35}}>
+                    <motion.div className={s.slider}
+                                initial={false}
+                                animate={{y: -index * 440}}
+                                transition={{duration: .35}}>
                         {projects.map(project => (
                             <div key={project.title}
                                  className={s.overlay}
                                  style={{backgroundColor: project.backgroundColor}}>
                                 <div className={s.imgContainer}>
-                                    <img src={project.backgroundImage} alt={project.title} />
+                                    <img src={project.backgroundImage} alt={project.title}/>
                                 </div>
                             </div>
                         ))}
