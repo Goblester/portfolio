@@ -35,17 +35,18 @@ export const MouseTooltip: React.FC<PropsType> = ({x, y, currentProject}) => {
                         transition={{type: "tween"}}
                         style={{x, y}}>
                 <div className={s.viewCircle}>
-                    <motion.span className={s.text} style={{y: textY, x: textX}}>
+                    <motion.a href={currentProject.demoLink} className={s.text} style={{y: textY, x: textX}}>
                         View
-                    </motion.span>
+                    </motion.a>
                 </div>
                 <div className={s.overlayContainer}>
                     <motion.div className={s.slider} animate={{y: -index * 440}} transition={{duration: .35}}>
                         {projects.map(project => (
                             <div key={project.title}
-                                 className={s.overlay}>
+                                 className={s.overlay}
+                                 style={{backgroundColor: project.backgroundColor}}>
                                 <div className={s.imgContainer}>
-                                    <img src={project.backgroundImage}/>
+                                    <img src={project.backgroundImage} alt={project.title} />
                                 </div>
                             </div>
                         ))}
